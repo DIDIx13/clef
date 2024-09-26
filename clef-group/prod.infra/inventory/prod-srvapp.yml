@@ -1,0 +1,7 @@
+all:
+  children:
+    app_server:  
+
+app_server:
+  hosts:
+    prod-srvapp:

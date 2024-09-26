@@ -1,0 +1,8 @@
+all:
+  children:
+    db_server:  
+
+
+db_server:
+  hosts:
+    prod-db:

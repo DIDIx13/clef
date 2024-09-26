@@ -1,0 +1,17 @@
+---
+# Install roles from Ansible Galaxy.
+roles: 
+- role: dhu.webapp
+  src: git@mylos.cifom.ch:dhu.ansible/dhu.roles/dhu.webapp.git
+  scm: git
+  version: 0.1.0
+
+# Install collections from Ansible Galaxy.
+collections: 
+- name: ansible.posix
+  version: 1.4.0
+- name : community.general
+  version: 5.5.0
+- name: community.postgresql
+  version: 2.1.5  
+

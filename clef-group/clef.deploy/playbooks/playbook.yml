@@ -1,0 +1,33 @@
+---
+- name: installation et configuration de la base de données
+  hosts: db_server
+  become: yes
+  tasks:
+  - name: "Création du role {{rest_server_db.user.name}}"
+    become_user: postgres
+    postgresql_user:
+      name: "{{rest_server_db.user.name}}"
+      password: "{{rest_server_db.user.password}}"
+
+  - name: "Création de la base de donnée {{rest_server_db.name}}"
+    become_user: postgres
+    postgresql_db:
+      name: "{{rest_server_db.name}}"
+      owner: "{{rest_server_db.user.name}}"
+
+- name: installation et configuration de la webapp
+  hosts: app_server
+  become: yes
+  vars:
+    dhu_webapp_repository_url: '{{ rest_server_repository_url}}'
+    dhu_webapp_repository_token: '{{ rest_server_repository_token }}'
+    dhu_webapp_group_id: '{{ rest_server_project_group_id }}'
+    dhu_webapp_artifact_id: '{{ rest_server_project_artifact_id }}'
+    dhu_webapp_version: '{{ rest_server_project_version }}'
+    dhu_webapp_context: '{{ rest_server_application_context }}'
+    dhu_webapp_context_config: "{{ rest_server_application_context_config }}"
+    dhu_webapp_extension: '{{ rest_server_application_archive_extension }}'
+    dhu_webapp_bin_archive: '{{ rest_server_application_archive }}'
+    dhu_webapp_dhu_webapp_bin_path_keep_new: false
+  roles:
+  - dhu.webapp

@@ -1,0 +1,14 @@
+---
+- name: Installation/configuration d'un cluster postgresql
+  hosts: 
+    - db_server
+  become: yes
+  roles:
+    - dhu.serveur_db
+
+- name: Installation/configuration d'un serveur d'application
+  hosts: 
+    - app_server
+  become: yes
+  roles: 
+  -  dhu.tomcat_port_80_443

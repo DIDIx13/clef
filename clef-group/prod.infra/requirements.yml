@@ -1,0 +1,22 @@
+---
+# Install roles from Ansible Galaxy.
+roles: 
+- role: dhu.serveur_db
+  src: git@mylos.cifom.ch:dhu.ansible/dhu.roles/dhu.serveur_db.git
+  scm: git
+  version: v1.0.1
+
+- role: dhu.tomcat_port_80_443
+  src: git@mylos.cifom.ch:dhu.ansible/dhu.roles/dhu.tomcat_port_80_443.git
+  scm: git
+  version: master
+
+
+# Install collections from Ansible Galaxy.
+collections: 
+- name: ansible.posix
+  version: 1.4.0
+- name : community.general
+  version: 5.5.0
+
+

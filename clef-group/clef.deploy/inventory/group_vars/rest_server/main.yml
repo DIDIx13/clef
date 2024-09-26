@@ -1,0 +1,27 @@
+---
+rest_server_db:
+  name: "clefProdDB"
+  user: "{{ vault_rest_server_db.user }}"
+
+rest_server_repository_url: 'https://mylos.cifom.ch/gitlab/api/v4/projects/1409/packages/maven'
+rest_server_repository_token: "{{ vault_rest_server.repository_token }}"
+rest_server_project_group_id: "dhu"
+rest_server_project_artifact_id: "clef.rest"
+rest_server_project_version: "latest"
+rest_server_application_archive_extension: 'war'
+rest_server_application_archive: 'clef.rest-{{ rest_server_project_version }}.{{rest_server_application_archive_extension}}'
+rest_server_application_context: "clef.rest"
+
+rest_server_application_context_config: |
+  <!-- datasource rest-->
+    <Resource auth="Container" driverClassName="org.postgresql.Driver" 
+              maxIdle="10" maxTotal="200" maxWait="-1" 
+              name="jdbc/db" 
+              username="{{ rest_server_db.user.name }}" 
+              password="{{ rest_server_db.user.password }}" 
+              type="javax.sql.DataSource" 
+              url="jdbc:postgresql://192.168.123.20:5432/{{ rest_server_db.name }}"/>
+
+    <Parameter name="transactionManagerFactoryClass" override="false" 
+                value="clef.datasource.db.TransactionManagerFactory"/>
+
