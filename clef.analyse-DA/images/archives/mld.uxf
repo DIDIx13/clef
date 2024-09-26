@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+<<<<<<< HEAD
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1225</x>
+      <y>364</y>
+      <w>252</w>
+      <h>140</h>
+=======
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1400</x>
+      <y>416</y>
+      <w>288</w>
+      <h>160</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+lieux
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;M&gt;&gt;nom: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;lieu_parent_uuid: UUID
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_lieux(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_lieux_lieu_parent(lieux_parents_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1617</x>
+      <y>364</y>
+      <w>252</w>
+      <h>147</h>
+=======
+      <x>1848</x>
+      <y>416</y>
+      <w>288</w>
+      <h>168</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+serrures
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+cardinalite: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;lieux_uuid: UUID
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_serrures(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_serrures_lieux(lieux_uuid)
+&lt;&lt;CK-2&gt;&gt;CK2_serrures_cardinalite(cardinalite)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>952</x>
+      <y>469</y>
+      <w>252</w>
+      <h>175</h>
+=======
+      <x>1088</x>
+      <y>536</y>
+      <w>288</w>
+      <h>200</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+personnes
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID
+&lt;&lt;M&gt;&gt;nom: TEXT {string}
+&lt;&lt;M&gt;&gt;prenom: TEXT {string}
+&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;email: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;groupes_uuid: UUID
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_personnes(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_personnes_groupes(groupes_uuid)
+&lt;&lt;U-1&gt;&gt;U1_personnes_email(email)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+<<<<<<< HEAD
+      <y>483</y>
+      <w>287</w>
+      <h>126</h>
+=======
+      <y>552</y>
+      <w>328</w>
+      <h>168</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+clefs
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+<<<<<<< HEAD
+&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;numéro de serie: TEXT {string}
+=======
+&lt;&lt;U-1&gt;&gt;&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;numero_serie: TEXT {string}
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+status: TEXT{string}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_clefs(uuid)
+&lt;&lt;CK-1&gt;&gt;CK1_clefs_status(status)
+&lt;&lt;U1&gt;&gt;U1_clefs_numero_serie(numero_serie)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>581</x>
+      <y>189</y>
+      <w>252</w>
+      <h>140</h>
+=======
+      <x>664</x>
+      <y>216</y>
+      <w>288</w>
+      <h>160</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+groupes
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;M&gt;&gt;nom: TEXT {string}
+description: TEXT {string}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+PK_groupes(uuid)
+&lt;&lt;U-1&gt;&gt;U1_groupes_nom(nom)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1148</x>
+      <y>308</y>
+      <w>196</w>
+      <h>105</h>
+=======
+      <x>1312</x>
+      <y>352</y>
+      <w>224</w>
+      <h>120</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+r1=parents
+r2=enfants
+m1=0..1
+m2=0..n
+</panel_attributes>
+    <additional_attributes>210.0;80.0;210.0;20.0;40.0;20.0;40.0;120.0;110.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1470</x>
+      <y>420</y>
+      <w>161</w>
+      <h>56</h>
+=======
+      <x>1680</x>
+      <y>480</y>
+      <w>184</w>
+      <h>64</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+&lt;&lt;FK-1&gt;&gt;
+
+{cascadeDelete}
+m1=1..n
+m2=1..1
+</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>84</x>
+      <y>651</y>
+      <w>294</w>
+      <h>42</h>
+=======
+      <x>96</x>
+      <y>744</y>
+      <w>336</w>
+      <h>48</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>*CHECK CK1_clefs_status*
+status IN('ACTIVE','INACTIVE','PERDUE','DISFONCTIONNELLE')
+bg=#DBD8E3
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>189</x>
+      <y>602</y>
+      <w>35</w>
+      <h>63</h>
+=======
+      <x>216</x>
+      <y>712</y>
+      <w>40</w>
+      <h>48</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1624</x>
+      <y>532</y>
+      <w>196</w>
+      <h>35</h>
+=======
+      <x>1856</x>
+      <y>608</y>
+      <w>224</w>
+      <h>40</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>*CHECK CK2_serrures_cardinalite*
+cardinalite IN('NORD','EST','SUD','OUEST')
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1715</x>
+      <y>504</y>
+      <w>21</w>
+      <h>42</h>
+=======
+      <x>1960</x>
+      <y>576</y>
+      <w>24</w>
+      <h>48</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1267</x>
+      <y>98</y>
+      <w>280</w>
+      <h>175</h>
+=======
+      <x>1448</x>
+      <y>112</y>
+      <w>320</w>
+      <h>200</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+acces
+--
+&lt;&lt;PFK-1&gt;&gt;groupes_uuid: UUID {aid}
+&lt;&lt;PFK-2&gt;&gt;lieux_uuid: UUID {aid}
+&lt;&lt;M&gt;&gt;date_debut: TIMESTAMP {datetime}
+&lt;&lt;M&gt;&gt;date_fin: TIMESTAMP {datetime}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_acces(
+         groupes_uuid, lieux_uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_acces_groupes(groupes_uuid)
+&lt;&lt;FK-2&gt;&gt;FK2_acces_lieux(lieux_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1393</x>
+      <y>266</y>
+      <w>105</w>
+      <h>112</h>
+=======
+      <x>1592</x>
+      <y>304</y>
+      <w>120</w>
+      <h>128</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-2&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>826</x>
+      <y>189</y>
+      <w>455</w>
+      <h>42</h>
+=======
+      <x>944</x>
+      <y>216</y>
+      <w>520</w>
+      <h>48</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;630.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>917</x>
+      <y>0</y>
+      <w>280</w>
+      <h>126</h>
+=======
+      <x>1048</x>
+      <y>0</y>
+      <w>320</w>
+      <h>144</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+historique_utilisation
+--
+&lt;&lt;PFK-1&gt;&gt;clefs_numero_serie: TEXT {aid}
+&lt;&lt;PFK-2&gt;&gt;serrures_uuid: UUID {aid}
+&lt;&lt;PK&gt;&gt;date_utilisation: TIMESTAMP
+&lt;&lt;M&gt;&gt;status: BOOLEAN
+--
+&lt;&lt;PK&gt;&gt;PK_historique_utilisation(
+         clefs_numero_serie, serrures_uuid, date_utilisation)
+&lt;&lt;FK-1&gt;&gt;FK1_historique_utilisation_clefs(clefs_numero_serie)
+&lt;&lt;FK-2&gt;&gt;FK2_historique_utilisation_serrures(serrures_uuid)
+
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>133</x>
+      <y>42</y>
+      <w>798</w>
+      <h>455</h>
+=======
+      <x>152</x>
+      <y>48</y>
+      <w>912</w>
+      <h>520</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;630.0;10.0;20.0;1120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>1190</x>
+      <y>42</y>
+      <w>588</w>
+      <h>336</h>
+=======
+      <x>1360</x>
+      <y>48</y>
+      <w>672</w>
+      <h>384</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-2&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>790.0;460.0;790.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>231</x>
+      <y>329</y>
+      <w>252</w>
+      <h>140</h>
+=======
+      <x>264</x>
+      <y>376</y>
+      <w>288</w>
+      <h>160</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+groupes_groupes
+--
+&lt;&lt;PFK-1&gt;&gt;enfant_uuid: UUID {aid}
+&lt;&lt;PFK-2&gt;&gt;parent_uuid: UUID {aid}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+PK_groupes_groupes(enfant_uuid,parent_uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_groupes_groupes_enfant(enfant_uuid)
+&lt;&lt;FK-2&gt;&gt;FK2_groupes_groupes_parent(parent_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>378</x>
+      <y>210</y>
+      <w>217</w>
+      <h>133</h>
+=======
+      <x>432</x>
+      <y>240</y>
+      <w>248</w>
+      <h>152</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+&lt;&lt;FK-1&gt;&gt;
+parent
+m2=1..1
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>476</x>
+      <y>322</y>
+      <w>175</w>
+      <h>119</h>
+=======
+      <x>544</x>
+      <y>368</y>
+      <w>200</w>
+      <h>136</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+enfant
+&lt;&lt;FK-2&gt;&gt;
+
+m2=1..1
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;130.0;200.0;130.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>826</x>
+      <y>266</y>
+      <w>252</w>
+      <h>217</h>
+=======
+      <x>944</x>
+      <y>304</y>
+      <w>288</w>
+      <h>248</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=-
+&lt;&lt;FK-1&gt;&gt;
+m1=0..1
+m2=1..1</panel_attributes>
+    <additional_attributes>10.0;20.0;310.0;20.0;310.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>441</x>
+      <y>490</y>
+      <w>357</w>
+      <h>140</h>
+=======
+      <x>504</x>
+      <y>560</y>
+      <w>408</w>
+      <h>160</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+registre
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;U-1&gt;&gt;&lt;&lt;FK-1&gt;&gt;personnes_uuid: UUID
+&lt;&lt;U-1&gt;&gt;&lt;&lt;FK-2&gt;&gt;clefs_uuid: UUID
+&lt;&lt;U-1&gt;&gt;&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;date_debut: DATE{datetime}
+date_fin: DATE{datetime}
+--
+&lt;&lt;PK&gt;&gt;PK_clefs_personnes(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_clefs_personnes_personnes(personnes_uuid)
+&lt;&lt;FK-2&gt;&gt;FK2_clefs_personnes_clefs(clefs_numero_serie)
+&lt;&lt;U-1&gt;&gt;U1_clefs_personnes_date(personnes_uuid,clefs_uuid,date_debut)
+
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>280</x>
+      <y>546</y>
+      <w>175</w>
+      <h>35</h>
+=======
+      <x>320</x>
+      <y>624</y>
+      <w>200</w>
+      <h>40</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+&lt;&lt;FK-2&gt;&gt;
+{cascadeDelete}
+m1=1..n
+m2=0..1</panel_attributes>
+    <additional_attributes>230.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+<<<<<<< HEAD
+      <x>791</x>
+      <y>553</y>
+      <w>175</w>
+      <h>42</h>
+=======
+      <x>904</x>
+      <y>632</y>
+      <w>200</w>
+      <h>48</h>
+>>>>>>> 406388f (MCD, MLD, DIAG. de classes terminés)
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+m1=1..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+</diagram>

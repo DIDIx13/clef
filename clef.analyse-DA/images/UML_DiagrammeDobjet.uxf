@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>8</x>
+      <y>172</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>_:ArrayList&lt;Groupe&gt;_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>36</x>
+      <y>92</y>
+      <w>72</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+groupes:List&lt;Groupe&gt; &gt;</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>64</x>
+      <y>120</y>
+      <w>76</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>170.0;80.0;170.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>124</x>
+      <y>152</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>124</x>
+      <y>164</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>124</x>
+      <y>176</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>124</x>
+      <y>188</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>124</x>
+      <y>200</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>124</x>
+      <y>212</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>136</x>
+      <y>148</y>
+      <w>88</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+groupe &gt;</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>136</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_enseignantsProg:Groupe_
+--
+uuid:UUID="12345678-..."
+description:String="Groupes contenant..."
+groupesParents:List&lt;Groupe&gt;
+groupesEnfants:List&lt;Groupe&gt;
+acces:List&lt;Acces&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>44</y>
+      <w>240</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+groupesParents:List&lt;Groupe&gt; &gt;</panel_attributes>
+    <additional_attributes>380.0;120.0;380.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>172</y>
+      <w>148</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+groupesEnfants:List&lt;Groupe&gt; &gt;</panel_attributes>
+    <additional_attributes>350.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>176</y>
+      <w>188</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+  acces:List&lt;Acces&gt; &gt;</panel_attributes>
+    <additional_attributes>450.0;530.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>152</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>140</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>128</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>116</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>104</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>92</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>448</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>436</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>424</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>412</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>400</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>388</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>252</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>240</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>228</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>216</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>204</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>192</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>136</x>
+      <y>164</y>
+      <w>112</w>
+      <h>468</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+  groupe &gt;</panel_attributes>
+    <additional_attributes>260.0;1150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>620</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_enseignantsReseau:Groupe_
+--
+uuid:UUID="12345678-..."
+description:String="Groupes contenant..."
+groupesParents:List&lt;Groupe&gt;
+groupesEnfants:List&lt;Groupe&gt;
+acces:List&lt;Acces&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>172</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+groupe &gt;
+</panel_attributes>
+    <additional_attributes>360.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>156</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_dominiquehuguenin@rpn.ch:Groupe_
+--
+uuid:UUID="12345678-..."
+description:String="Groupe personnel"
+groupesParents:List&lt;Groupe&gt;
+groupesEnfants:List&lt;Groupe&gt;
+acces:List&lt;Acces&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1196</x>
+      <y>160</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>_:ArrayList&lt;Personne&gt;_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>72</y>
+      <w>84</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+personnes:List&lt;Personne&gt; &gt;</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>96</y>
+      <w>84</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0;190.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1116</x>
+      <y>128</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1116</x>
+      <y>140</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1116</x>
+      <y>152</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1116</x>
+      <y>164</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1116</x>
+      <y>176</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1116</x>
+      <y>188</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1064</x>
+      <y>124</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>140</y>
+      <w>80</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>10.0;250.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>956</x>
+      <y>112</y>
+      <w>112</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_Dominique Huguenin:Personne_
+--
+uuid:UUID="12345678-..."
+prenom:String="Dominique"
+nom:String="Huguenin"
+email:String="dominique.huguenin@rpn.ch"
+groupesPerso:Groupe
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>124</y>
+      <w>244</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+&lt; groupePerso
+</panel_attributes>
+    <additional_attributes>10.0;140.0;590.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>268</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_cedric.caillet@rpn.ch:Groupe_
+--
+uuid:UUID="12345678-..."
+description:String="Groupe personnel"
+groupesParents:List&lt;Groupe&gt;
+groupesEnfants:List&lt;Groupe&gt;
+acces:List&lt;Acces&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>208</y>
+      <w>152</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+
+groupe &gt;
+</panel_attributes>
+    <additional_attributes>360.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>940</x>
+      <y>220</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_Cédric Caillet:Personne_
+--
+uuid:UUID="12345678-..."
+prenom:String="Cédric"
+nom:String="Caillet"
+email:String="cedric.caillet@rpn.ch"
+groupesPerso:Groupe
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>232</y>
+      <w>228</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+&lt; groupePerso
+</panel_attributes>
+    <additional_attributes>10.0;140.0;550.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>64</y>
+      <w>148</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+groupe &gt;
+</panel_attributes>
+    <additional_attributes>350.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>608</x>
+      <y>48</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_Enseignants:Groupe_
+--
+uuid:UUID="12345678-..."
+description:String="Groupe contenant ..."
+groupesParents:List&lt;Groupe&gt;
+groupesEnfants:List&lt;Groupe&gt;
+acces:List&lt;Acces&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>380</y>
+      <w>152</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+acces &gt;
+</panel_attributes>
+    <additional_attributes>360.0;20.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>368</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_accesCplnEnseignants:Acces_
+--
+uuid:UUID="12345678-..."
+date_debut:LocalDateTime=2020.03.01
+date_fin:LocalDateTime=2025.03.01
+lieu:Lieu</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>456</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_accesCifomEnseignants:Acces_
+--
+uuid:UUID="12345678-..."
+date_debut:LocalDateTime=2020.03.05
+date_fin:LocalDateTime=2023.03.05
+lieu:Lieu</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>472</x>
+      <y>404</y>
+      <w>176</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+acces &gt;
+</panel_attributes>
+    <additional_attributes>420.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>796</x>
+      <y>364</y>
+      <w>108</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>_CPLN:Lieu_
+--
+uuid:UUID="12345678-..."
+nom:String="CPLN"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>376</y>
+      <w>84</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+lieu &gt;
+</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>792</x>
+      <y>456</y>
+      <w>108</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>_CIFOM:Lieu_
+--
+uuid:UUID="12345678-..."
+nom:String="CIFOM"</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>468</y>
+      <w>56</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+lieu &gt;
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>332</x>
+      <y>656</y>
+      <w>148</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+groupesEnfants:List&lt;Groupe&gt; &gt;</panel_attributes>
+    <additional_attributes>350.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>660</y>
+      <w>216</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+  acces:List&lt;Acces&gt; &gt;</panel_attributes>
+    <additional_attributes>520.0;490.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>636</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>624</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>612</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>600</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>588</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>576</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>916</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>904</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>892</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>880</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>868</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>500</x>
+      <y>856</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>736</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>724</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[n-1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>712</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>700</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[3]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>688</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[1]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>676</y>
+      <w>16</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>[0]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>528</y>
+      <w>240</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+groupesParents:List&lt;Groupe&gt; &gt;</panel_attributes>
+    <additional_attributes>380.0;120.0;380.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>88</y>
+      <w>144</w>
+      <h>500</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+groupe &gt;
+</panel_attributes>
+    <additional_attributes>340.0;10.0;10.0;1230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>656</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_philippe.sauser@rpn.ch:Groupe_
+--
+uuid:UUID="12345678-..."
+description:String="Groupe personnel"
+groupesParents:List&lt;Groupe&gt;
+groupesEnfants:List&lt;Groupe&gt;
+acces:List&lt;Acces&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>484</x>
+      <y>672</y>
+      <w>136</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+groupe &gt;
+</panel_attributes>
+    <additional_attributes>320.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>408</y>
+      <w>132</w>
+      <h>460</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+acces &gt;
+</panel_attributes>
+    <additional_attributes>310.0;10.0;10.0;1130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>940</x>
+      <y>512</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>_Philippe Sauser:Personne_
+--
+uuid:UUID="12345678-..."
+prenom:String="Philippe"
+nom:String="Sauser"
+email:String="philippe.sauser@rpn.ch"
+groupesPerso:Groupe
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>716</x>
+      <y>524</y>
+      <w>232</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+
+
+&lt; groupePerso
+</panel_attributes>
+    <additional_attributes>10.0;380.0;560.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>156</y>
+      <w>80</w>
+      <h>384</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>10.0;940.0;180.0;10.0</additional_attributes>
+  </element>
+</diagram>

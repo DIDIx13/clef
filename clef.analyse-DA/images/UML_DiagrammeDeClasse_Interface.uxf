@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>3</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1149</x>
+      <y>750</y>
+      <w>102</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Clef
+--
++setNumeroSerie(numeroSerie: String)
++getNumeroSerie():String
++setClefStatus (status: ClefStatus)
++getClefStatus():ClefStatus</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1017</x>
+      <y>738</y>
+      <w>81</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Personne
+--
++setNom(nom: String)
++getNom():String
++setPrenom(prenom: String)
++getPrenom():String
++setEmail(email: String)
++getEmail():String
++getAllClefs():ArrayList&lt;Clef&gt;
++addClef(newClef: Clef)
++removeClef(numero_serie: String)
++getAllAcces():ArrayList&lt;Acces&gt;
++addAcces(newAcces : Acces)
++removeAcces(lieu: Lieu) 
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>837</x>
+      <y>741</y>
+      <w>132</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Acces
+--
++update(Acces):void
++getdate_debut():LocalDateTime
++setdate_debut(dateDebut : LocalDateTime)
++getdate_fin():LocalDateTime
++setdate_fin(dateFin : LocalDateTime)
++getLieu():Lieu
++setLieu(lieu : Lieu)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>687</x>
+      <y>753</y>
+      <w>105</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Lieu
+--
++getnom():String
++setnom(nom : String)
++getLieuParent():Lieu
++setLieuParent(lieu : Lieu)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>762</y>
+      <w>81</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=0..1
+m2=1..n
+
+
+Fais partie de </panel_attributes>
+    <additional_attributes>130.0;10.0;40.0;10.0;40.0;120.0;220.0;120.0;220.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>966</x>
+      <y>765</y>
+      <w>57</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+m1=1..n
+m2=1..1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1095</x>
+      <y>765</y>
+      <w>60</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=0..1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>600</y>
+      <w>93</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>LieuBase
+--
+-nom: String
+-lieuParent: Lieu
+--
++LieuBase(Builder)
++builder():Builder
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>789</x>
+      <y>768</y>
+      <w>54</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1..1
+m2=1..n</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>732</x>
+      <y>699</y>
+      <w>9</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>696</y>
+      <w>9</w>
+      <h>51</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>561</y>
+      <w>87</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>PersonneBase
+--
+-nom: String
+-prenom: String
+-email: String
+-acces: ArrayList&lt;Acces&gt;
+-clefs: ArrayList&lt;Clef&gt;
+--
++PersonnesBase(Builder)
++builder():Builder
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1149</x>
+      <y>591</y>
+      <w>90</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>ClefBase
+--
+-numeroserie: String
+-status: ClefStatus
+--
++ClefBase(Builder)
++builder():Builder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1044</x>
+      <y>705</y>
+      <w>9</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1182</x>
+      <y>690</y>
+      <w>9</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>477</x>
+      <y>663</y>
+      <w>63</w>
+      <h>57</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Entite
+--
++getIdentifiant():Identifiant
++update(T):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>477</x>
+      <y>591</y>
+      <w>63</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Identifiant
+--
++getUUID(): UUID
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>381</x>
+      <y>591</y>
+      <w>78</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>IdentifiantBase
+--
+-uuid : UUID
+--
+-IdentifiantBase(Builder)
+
++hashCode() int
++equals(obj : Object)  boolean
++toString() String
+
++builder():Builder
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>609</y>
+      <w>27</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>501</x>
+      <y>618</y>
+      <w>9</w>
+      <h>51</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>759</x>
+      <y>714</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>Lien&gt;
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1062</x>
+      <y>711</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>Lien&gt;
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>720</y>
+      <w>9</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1065</x>
+      <y>717</y>
+      <w>9</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>558</x>
+      <y>690</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>&lt;Lien
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>537</x>
+      <y>690</y>
+      <w>27</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>642</x>
+      <y>525</y>
+      <w>699</w>
+      <h>324</h>
+    </coordinates>
+    <panel_attributes>clef.domain
+--
+bg=orange
+layer=-2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>345</x>
+      <y>546</y>
+      <w>270</w>
+      <h>282</h>
+    </coordinates>
+    <panel_attributes>core.domain
+--
+bg=yellow
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>444</x>
+      <y>753</y>
+      <w>63</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+EntiteBase
+--
+#identifiant:Identifiant
+--
+#EntiteBase(Identifiant)
+
++update(T):void
+
++hashcode():int
++equals():Boolean
++toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>717</y>
+      <w>36</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>525</x>
+      <y>783</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>&lt;Lien
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>783</y>
+      <w>27</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>573</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>Lien&gt;
+bg=green
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>579</y>
+      <w>9</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1038</x>
+      <y>537</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>Lien&gt;
+bg=green
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>543</y>
+      <w>9</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1194</x>
+      <y>723</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>Lien&gt;
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1203</x>
+      <y>729</y>
+      <w>9</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1221</x>
+      <y>573</y>
+      <w>9</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+layer=2</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1209</x>
+      <y>567</y>
+      <w>30</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>Lien&gt;
+bg=green
+layer=0</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>861</x>
+      <y>588</y>
+      <w>84</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>AccesBase
+--
+-date_debut: LocalDateTime
+-date_fin: LocalDateTime
+-lieu: Lieu
+--
++AccesBase(Builder)
++hashCode():int
++equals(obj : Object):boolean
++toString():String
++builder():Builder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>636</y>
+      <w>78</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Builder
+--
+-date_debut: LocalDateTime
+-date_fin: LocalDateTime
+-lieu: Lieu
+--
+-Builder
+
++date_debut(LocalDateTime):Builder
++date_fin(LocalDateTime):Builder
++lieu(Lieu):Builder
++acces(Acces):Builder
++build():Acces</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1023</x>
+      <y>606</y>
+      <w>81</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Builder
+--
+-identifiant: Identifiant
+
+-nom: String
+-prenom: String
+-email: String
+-acces: ArrayList&lt;Acces&gt;
+-clefs: ArrayList&lt;Clef&gt;
+--
+-Builder()
+
++identifiant(Identifiant):Builder
+
++nom(String):Builder
++prenom(String):Builder
++email(String):Builder
++acces(ArrayList&lt;Acces&gt;):Builder
++clefs(ArrayList&lt;Clef&gt;):Builder
++personne(Personne):Builder
++build():Personne</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1152</x>
+      <y>621</y>
+      <w>84</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>Builder
+--
+-identifiant: Identifiant
+
+-numeroserie: String
+-status: ClefStatus
+--
+-Builder()
+
++identifiant(Identifiant):Builder
+
++numeroserie(String):Builder
++status(ClefStatus):Builder
++clef(Clef):Builder
++build():Clef</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1272</x>
+      <y>615</y>
+      <w>54</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+ClefStatus
+--
+ACTIVE
+INACTIVE
+PERDUE
+DISFONCTIONNELLE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1236</x>
+      <y>615</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>693</x>
+      <y>630</y>
+      <w>87</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>Builder
+--
+-identifiant: Identifiant
+
+-nom: String
+-lieuParent: Lieu
+--
+-Builder()
+
++identifiant(Identifiant):Builder
+
++nom(String):Builder
++lieuParent(Lieu):Builder
++lieu(Lieu):Builder
++build():Lieu</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>639</y>
+      <w>72</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Builder
+--
+-uuid:UUID
+
+-
+-Builder()
+
++uuid(UUID):Builder
+
++identifiant(Identifiant):Builder
++build():Identifiant</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

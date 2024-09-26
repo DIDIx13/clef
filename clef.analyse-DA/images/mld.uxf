@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>903</x>
+      <y>448</y>
+      <w>252</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+lieux
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;M&gt;&gt;nom: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;lieu_parent_uuid: UUID
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_lieux(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_lieux_lieu_parent(lieux_parents_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>259</x>
+      <y>77</y>
+      <w>252</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+personnes
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID
+&lt;&lt;M&gt;&gt;nom: TEXT {string}
+&lt;&lt;M&gt;&gt;prenom: TEXT {string}
+&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;email: TEXT {string}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_personnes(uuid)
+&lt;&lt;U-1&gt;&gt;U1_personnes_email(email)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>231</x>
+      <y>406</y>
+      <w>287</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+clefs
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;U-1&gt;&gt;&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;numero_serie: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;personnes_uuid: UUID
+status: TEXT{string}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_clefs(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_clefs_personnes(personnes_uuid)
+&lt;&lt;U1&gt;&gt;U1_clefs_numero_serie(numero_serie)
+&lt;&lt;CK-1&gt;&gt;CK1_clefs_status(status)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>392</y>
+      <w>175</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+r1=parents
+r2=enfants
+m1=0..1
+m2=0..n
+</panel_attributes>
+    <additional_attributes>180.0;80.0;180.0;20.0;10.0;20.0;10.0;120.0;80.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>224</x>
+      <y>644</y>
+      <w>294</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>*CHECK CK1_clefs_status*
+status IN('ACTIVE','INACTIVE','PERDUE','DISFONCTIONNELLE')
+bg=#DBD8E3
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>574</y>
+      <w>98</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>889</x>
+      <y>63</y>
+      <w>280</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+acces
+--
+&lt;&lt;PFK-1&gt;&gt;personnes_uuid: UUID {aid}
+&lt;&lt;PFK-2&gt;&gt;lieux_uuid: UUID {aid}
+&lt;&lt;M&gt;&gt;date_debut: TIMESTAMP {datetime}
+&lt;&lt;M&gt;&gt;date_fin: TIMESTAMP {datetime}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_acces(
+         personnes_uuid, lieux_uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_acces_personnes(personnes_uuid)
+&lt;&lt;FK-2&gt;&gt;FK2_acces_lieux(lieux_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1071</x>
+      <y>231</y>
+      <w>91</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-2&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;310.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>154</y>
+      <w>399</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;550.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>224</y>
+      <w>49</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>lt=-
+&lt;&lt;FK-1&gt;&gt;
+m1=0..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

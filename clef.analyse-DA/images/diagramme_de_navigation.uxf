@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>306</x>
+      <y>294</y>
+      <w>36</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>User</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>390</x>
+      <y>312</y>
+      <w>114</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Entré dans l'application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>564</x>
+      <y>288</y>
+      <w>96</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Accueil
+--
+Liste des Personnes
+Liste des Clef
+Liste des Lieux
+Exit
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>732</x>
+      <y>276</y>
+      <w>96</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Liste des Personnes
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>738</x>
+      <y>324</y>
+      <w>72</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Liste des Clef
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>318</y>
+      <w>72</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>294</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>318</y>
+      <w>84</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>120.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>204</y>
+      <w>336</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0;540.0;10.0;540.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>342</y>
+      <w>78</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>822</x>
+      <y>294</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>318</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>444</y>
+      <w>756</w>
+      <h>474</h>
+    </coordinates>
+    <panel_attributes>Personnes
+--
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>468</y>
+      <w>156</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Rechercher]
+/personnes.html
+ou
+/personnes.html?action=FILTRER</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>156</x>
+      <y>540</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Liste
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>156</x>
+      <y>702</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Visualisation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>630</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Création</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>882</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Modification</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>870</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Supppression</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>180</x>
+      <y>564</y>
+      <w>192</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[hyperlien d'un item]
+/personnes/{id}.html
+ou
+/personnes/{id}.html?action=VISUALISER</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>726</y>
+      <w>186</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Modifier...]
+/personnes/{id}.html?action=MODIFIER</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>720</y>
+      <w>420</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Supprimer ...]
+/personnes/{id}.html?action=SUPPRIMER</panel_attributes>
+    <additional_attributes>680.0;270.0;650.0;270.0;650.0;110.0;40.0;110.0;40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>558</y>
+      <w>420</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Créer ...]
+/personnes/{id}.html?action=CREER</panel_attributes>
+    <additional_attributes>680.0;140.0;580.0;140.0;580.0;80.0;30.0;80.0;30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>708</y>
+      <w>450</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/personnes/{id}.html?action=QUITTER
+redirection vers personnes.html</panel_attributes>
+    <additional_attributes>10.0;20.0;730.0;20.0;730.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>654</y>
+      <w>438</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Créer]
+/personnes.html?action=VALIDER_CREATION
+redirection vers /personnes/{id}.html</panel_attributes>
+    <additional_attributes>10.0;90.0;40.0;90.0;40.0;40.0;710.0;40.0;710.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>0</x>
+      <y>714</y>
+      <w>246</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/personnes/{id}.html?action=QUITTER
+ou
+[Modifier]
+/personnes/{id}.html?action=VALIDER_MODIFICATION</panel_attributes>
+    <additional_attributes>260.0;10.0;10.0;10.0;10.0;310.0;250.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>6</x>
+      <y>546</y>
+      <w>180</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/personnes/{id}.html?action=QUITTER
+redirection vers /personnes.html</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;10.0;10.0;270.0;250.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>528</y>
+      <w>546</w>
+      <h>366</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Supprimer]
+/personnes/{id}.html?action=VALIDER_SUPPPRESSION
+redirection vers /personnes.html</panel_attributes>
+    <additional_attributes>10.0;20.0;800.0;20.0;800.0;590.0;780.0;590.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>546</y>
+      <w>432</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/personnes/{id}.html?action=QUITTER
+redirection vers personnes.html</panel_attributes>
+    <additional_attributes>10.0;20.0;610.0;20.0;610.0;110.0;700.0;110.0;700.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>744</x>
+      <y>360</y>
+      <w>72</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Liste des Lieux
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>318</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>120.0;120.0;10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>822</x>
+      <y>384</y>
+      <w>66</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=-
+fg=#FD7014</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>774</x>
+      <y>444</y>
+      <w>744</w>
+      <h>474</h>
+    </coordinates>
+    <panel_attributes>Clefs
+--
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>456</y>
+      <w>132</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Rechercher]
+/clefs.html
+ou
+/clefs.html?action=FILTRER</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>924</x>
+      <y>522</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Liste
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>924</x>
+      <y>690</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Visualisation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1380</x>
+      <y>600</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Création</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>918</x>
+      <y>882</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Modification</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1380</x>
+      <y>876</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Supppression</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>948</x>
+      <y>546</y>
+      <w>168</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[hyperlien d'un item]
+/clefs/{id}.html
+ou
+/clefs/{id}.html?action=VISUALISER</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>942</x>
+      <y>714</y>
+      <w>162</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Modifier...]
+/clefs/{id}.html?action=MODIFIER</panel_attributes>
+    <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>978</x>
+      <y>708</y>
+      <w>414</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Supprimer ...]
+/clefs/{id}.html?action=SUPPRIMER</panel_attributes>
+    <additional_attributes>670.0;300.0;630.0;300.0;630.0;100.0;40.0;100.0;40.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>978</x>
+      <y>696</y>
+      <w>444</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/clefs/{id}.html?action=QUITTER
+redirection vers clefs.html</panel_attributes>
+    <additional_attributes>10.0;20.0;720.0;20.0;720.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>978</x>
+      <y>624</y>
+      <w>432</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Créer]
+/clefs.html?action=VALIDER_CREATION
+redirection vers /clefs/{id}.html</panel_attributes>
+    <additional_attributes>10.0;120.0;40.0;120.0;40.0;50.0;700.0;50.0;700.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>702</y>
+      <w>222</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/clefs/{id}.html?action=QUITTER
+ou
+[Sauvegarder]
+/clefs/{id}.html?action=VALIDER_MODIFICATION</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;10.0;10.0;330.0;230.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>534</y>
+      <w>156</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/clefs/{id}.html?action=QUITTER
+redirection vers /clefs.html</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;10.0;10.0;270.0;240.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>978</x>
+      <y>510</y>
+      <w>540</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Supprimer]
+/clefs/{id}.html?action=VALIDER_SUPPPRESSION
+redirection vers /clefs.html</panel_attributes>
+    <additional_attributes>10.0;20.0;790.0;20.0;790.0;630.0;770.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>978</x>
+      <y>528</y>
+      <w>426</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/clefs/{id}.html?action=QUITTER
+redirection vers clefs.html</panel_attributes>
+    <additional_attributes>10.0;20.0;610.0;20.0;610.0;90.0;690.0;90.0;690.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>930</y>
+      <w>756</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>Lieux
+--
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>966</y>
+      <w>132</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Rechercher]
+/lieux.html
+ou
+/lieux.html?action=FILTRER</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>174</x>
+      <y>1032</y>
+      <w>60</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Liste
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>174</x>
+      <y>1182</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Visualisation</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>1092</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Création</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>168</x>
+      <y>1338</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Modification</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>618</x>
+      <y>1338</y>
+      <w>60</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Détail 
+Supppression</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>198</x>
+      <y>1050</y>
+      <w>168</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[hyperlien d'un item]
+/lieux/{id}.html
+ou
+/lieux/{id}.html?action=VISUALISER</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>1206</y>
+      <w>162</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Modifier...]
+/lieux/{id}.html?action=MODIFIER</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>1200</y>
+      <w>402</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Supprimer ...]
+/lieux/{id}.html?action=SUPPRIMER</panel_attributes>
+    <additional_attributes>650.0;250.0;620.0;250.0;620.0;100.0;50.0;100.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>1188</y>
+      <w>432</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/lieux/{id}.html?action=QUITTER
+redirection vers lieux.html</panel_attributes>
+    <additional_attributes>10.0;20.0;700.0;20.0;700.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>1116</y>
+      <w>426</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Créer]
+/lieux.html?action=VALIDER_CREATION
+redirection vers /lieux/{id}.html</panel_attributes>
+    <additional_attributes>10.0;120.0;50.0;120.0;50.0;80.0;690.0;80.0;690.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>12</x>
+      <y>1194</y>
+      <w>222</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/lieux/{id}.html?action=QUITTER
+ou
+[Sauvegarder]
+/lieux/{id}.html?action=VALIDER_MODIFICATION</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;10.0;10.0;270.0;260.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>48</x>
+      <y>1044</y>
+      <w>156</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/lieux/{id}.html?action=QUITTER
+redirection vers /lieux.html</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;10.0;10.0;240.0;210.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>1020</y>
+      <w>510</w>
+      <h>342</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Supprimer]
+/lieux/{id}.html?action=VALIDER_SUPPPRESSION
+redirection vers /lieux.html</panel_attributes>
+    <additional_attributes>10.0;20.0;770.0;20.0;770.0;550.0;750.0;550.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>1032</y>
+      <w>414</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Quitter]
+/lieux/{id}.html?action=QUITTER
+redirection vers lieux.html</panel_attributes>
+    <additional_attributes>10.0;20.0;560.0;20.0;560.0;60.0;670.0;60.0;670.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>978</x>
+      <y>540</y>
+      <w>414</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Créer ...]
+/clefs/{id}.html?action=CREER</panel_attributes>
+    <additional_attributes>670.0;130.0;580.0;130.0;580.0;70.0;110.0;70.0;110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>1044</y>
+      <w>402</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+[Créer ...]
+/lieux/{id}.html?action=CREER</panel_attributes>
+    <additional_attributes>650.0;100.0;140.0;100.0;140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>264</x>
+      <y>180</y>
+      <w>708</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1071</x>
+      <y>308</y>
+      <w>252</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+lieux
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;M&gt;&gt;nom: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;lieu_parent_uuid: UUID
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_lieux(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_lieux_lieu_parent(lieux_parents_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1463</x>
+      <y>308</y>
+      <w>252</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+serrures
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+cardinalite: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;lieux_uuid: UUID
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_serrures(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_serrures_lieux(lieux_uuid)
+&lt;&lt;CK-2&gt;&gt;CK2_serrures_cardinalite(cardinalite)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>413</y>
+      <w>252</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+personnes
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID
+&lt;&lt;M&gt;&gt;nom: TEXT {string}
+&lt;&lt;M&gt;&gt;prenom: TEXT {string}
+&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;email: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;groupes_uuid: UUID
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_personnes(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_personnes_groupes(groupes_uuid)
+&lt;&lt;U-1&gt;&gt;U1_personnes_email(email)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>182</x>
+      <y>434</y>
+      <w>287</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+clefs
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;U-1&gt;&gt;&lt;&lt;NID&gt;&gt;&lt;&lt;M&gt;&gt;numero_serie: TEXT {string}
+&lt;&lt;FK-1&gt;&gt;personnes_uuid: UUID
+status: TEXT{string}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_clefs(uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_clefs_personnes(personnes_uuid)
+&lt;&lt;U1&gt;&gt;U1_clefs_numero_serie(numero_serie)
+&lt;&lt;CK-1&gt;&gt;CK1_clefs_status(status)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>427</x>
+      <y>133</y>
+      <w>252</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+groupes
+--
+&lt;&lt;PK&gt;&gt;uuid: UUID {aid}
+&lt;&lt;U-1&gt;&gt;&lt;&lt;M&gt;&gt;nom: TEXT {string}
+description: TEXT {string}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+PK_groupes(uuid)
+&lt;&lt;U-1&gt;&gt;U1_groupes_nom(nom)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>994</x>
+      <y>252</y>
+      <w>196</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+r1=parents
+r2=enfants
+m1=0..1
+m2=0..n
+</panel_attributes>
+    <additional_attributes>210.0;80.0;210.0;20.0;40.0;20.0;40.0;120.0;110.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1316</x>
+      <y>364</y>
+      <w>161</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+&lt;&lt;FK-1&gt;&gt;
+
+{cascadeDelete}
+m1=1..n
+m2=1..1
+</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>266</x>
+      <y>637</y>
+      <w>294</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>*CHECK CK1_clefs_status*
+status IN('ACTIVE','INACTIVE','PERDUE','DISFONCTIONNELLE')
+bg=#DBD8E3
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>371</x>
+      <y>602</y>
+      <w>35</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1470</x>
+      <y>476</y>
+      <w>196</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>*CHECK CK2_serrures_cardinalite*
+cardinalite IN('NORD','EST','SUD','OUEST')
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1561</x>
+      <y>448</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1113</x>
+      <y>42</y>
+      <w>280</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+acces
+--
+&lt;&lt;PFK-1&gt;&gt;groupes_uuid: UUID {aid}
+&lt;&lt;PFK-2&gt;&gt;lieux_uuid: UUID {aid}
+&lt;&lt;M&gt;&gt;date_debut: TIMESTAMP {datetime}
+&lt;&lt;M&gt;&gt;date_fin: TIMESTAMP {datetime}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+&lt;&lt;PK&gt;&gt;PK_acces(
+         groupes_uuid, lieux_uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_acces_groupes(groupes_uuid)
+&lt;&lt;FK-2&gt;&gt;FK2_acces_lieux(lieux_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1239</x>
+      <y>210</y>
+      <w>105</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-2&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>133</y>
+      <w>455</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt;&lt;FK-1&gt;&gt;
+{cascadeDelete}
+m1=1..1
+m2=1..n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;630.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>77</x>
+      <y>273</y>
+      <w>252</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Table&gt;&gt;
+groupes_groupes
+--
+&lt;&lt;PFK-1&gt;&gt;enfant_uuid: UUID {aid}
+&lt;&lt;PFK-2&gt;&gt;parent_uuid: UUID {aid}
+&lt;&lt;AAI&gt;&gt;instant_creation: TIMESTAMP = now() {datetime}
+&lt;&lt;AAU&gt;&gt;user_creation: TEXT {word}
+&lt;&lt;AMI&gt;&gt;instant_modification: TIMESTAMP {datetime}
+&lt;&lt;AMU&gt;&gt;user_modification: TEXT {word}
+--
+PK_groupes_groupes(enfant_uuid,parent_uuid)
+&lt;&lt;FK-1&gt;&gt;FK1_groupes_groupes_enfant(enfant_uuid)
+&lt;&lt;FK-2&gt;&gt;FK2_groupes_groupes_parent(parent_uuid)
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>154</y>
+      <w>217</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+&lt;&lt;FK-1&gt;&gt;
+parent
+m2=1..1
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;170.0;10.0;20.0;290.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>322</x>
+      <y>266</y>
+      <w>175</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;
+enfant
+&lt;&lt;FK-2&gt;&gt;
+
+m2=1..1
+m1=1..n</panel_attributes>
+    <additional_attributes>10.0;130.0;200.0;130.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>210</y>
+      <w>252</w>
+      <h>217</h>
+    </coordinates>
+    <panel_attributes>lt=-
+&lt;&lt;FK-1&gt;&gt;
+m1=0..1
+m2=1..1</panel_attributes>
+    <additional_attributes>10.0;20.0;310.0;20.0;310.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>497</y>
+      <w>350</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=-
+&lt;&lt;FK-1&gt;&gt;
+m1=0..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>10.0;20.0;480.0;20.0</additional_attributes>
+  </element>
+</diagram>
