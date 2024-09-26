@@ -1,0 +1,43 @@
+<%@page import="clef.routing.ActionPage"%>
+<%@ page pageEncoding="UTF-8" %><%--
+--%><%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<nav>
+    <button type="submit" name="action" formnovalidate=""
+            value="<%= ActionPage.QUITTER.name()%>">
+        Quitter
+    </button>
+    <c:choose>
+        <c:when test="${EtatPage.VISUALISATION == etatPage}">
+            <button type="submit" name="action"
+                    value="<%= ActionPage.MODIFIER.name()%>">
+                Modifier...
+            </button>
+            <button type="submit" name="action"
+                    value="<%= ActionPage.SUPPRIMER.name()%>">
+                Supprimer...
+            </button>
+        </c:when>
+
+        <c:when test="${EtatPage.MODIFICATION == etatPage}">
+            <button type="submit" name="action"
+                    value="<%= ActionPage.VALIDER_MODIFICATION.name()%>">
+                Valider modification
+            </button>
+        </c:when>
+
+        <c:when test="${EtatPage.SUPPRESSION == etatPage}">
+            <button type="submit" name="action"
+                    value="<%= ActionPage.VALIDER_SUPPRESSION.name()%>">
+                Supprimer
+            </button>
+        </c:when>
+
+        <c:when test="${EtatPage.CREATION == etatPage}">
+            <button type="submit" name="action"
+                    value="<%= ActionPage.VALIDER_CREATION.name()%>">
+                Créer
+            </button>
+        </c:when>
+
+    </c:choose>
+</nav>
