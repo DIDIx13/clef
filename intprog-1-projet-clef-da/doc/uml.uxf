@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>369</x>
+      <y>126</y>
+      <w>765</w>
+      <h>657</h>
+    </coordinates>
+    <panel_attributes>ch.esne.domain
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>405</y>
+      <w>288</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Clef
+--
+- numero_serie: String
+- status: ClefStatus
+--
++ Clef()
++ Clef(clefStatus: ClefStatus)
++ setNumeroSerie(numeroSerie: String)
++ getNumeroSerie(): String
++ setClefStatus (status: ClefStatus)
++ getClefStatus(): ClefStatus
++ hashCode(): int
++ equals(obj : Object) : boolean
++ toString(): String
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>306</y>
+      <w>27</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>207</y>
+      <w>216</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+ClefStatus
+--
+ACTIVE,
+INACTIVE,
+DISFONCTIONNELLE,
+PERDUE
+bg=#DBD8E3</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
